@@ -7,10 +7,8 @@ export class ProductsController {
 
     @Post()
     async createProduct(@Body() body: CreateProductDto) {
-        console.log('body: ', body);
         try {
             const product = await this.productsService.createProduct(body);
-            console.log('product: ', product);
             return {
                 status: 'success',
                 data: product
