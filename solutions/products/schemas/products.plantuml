@@ -1,0 +1,16 @@
+@startuml Products Schema
+
+entity Products {
+    *id: number <PK>
+    --
+    price: number
+    --
+    *createdAt: datetime
+    *updatedAt: datetime
+    *createdBy: Varchar(255)
+    *updatedBy: Varchar(255)
+    deletedBy: Varchar(255) 
+    deletedAt: datetime
+}
+
+@enduml

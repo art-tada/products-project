@@ -1,0 +1,17 @@
+@startuml Product Names Schema
+
+entity ProductNames {
+    *id: number <PK>
+    *productId: number <FK>
+    --
+    *name: Varchar(255)
+    *language: Varchar(255)
+    --
+    *createdAt: datetime
+    *updatedAt: datetime
+    *createdBy: Varchar(255)
+    *updatedBy: Varchar(255)
+    deletedBy: Varchar(255) 
+    deletedAt: datetime
+}
+@enduml

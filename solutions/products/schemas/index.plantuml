@@ -1,0 +1,11 @@
+@startuml
+skinparam linetype ortho
+
+!include products.plantuml
+!include product-name.plantuml
+!include product-description.plantuml
+
+Products ||--|{ ProductNames
+Products ||--|{ ProductDescriptions
+
+@enduml
